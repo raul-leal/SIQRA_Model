@@ -1,6 +1,9 @@
 # SIQRA_Model
 Analysis of the SIQRA model for computer virus behavior on networks.
 
+> [!NOTE]
+> This work is part of a bigger report made for the Iniciação Científica program of the Federal University of ABC, São Paulo.
+
 # Introduction
 Kermack and McKendrick developed the SIR (Susceptible-Infected-Removed) model for modeling biological viruses in 1920. Since then, many other models have been developed from the original SIR and adapted to model the behavior of computer viruses due to its similarity with biological viruses. One of these models is the SIQRA (Susceptible-Infected-Quarantine-Removed-Antidotal), developed in [3].
 
@@ -21,7 +24,7 @@ $\dot{A} = \alpha_{SA} S A + \alpha_{IA} A I + \alpha_{QA} Q A.$|   $\dot{A} = \
 This work aimed to test the stability of this model through simulations with a population of 100 nodes.
 
 # Analysis of the SIQRA Model
-Firstly, a manual variation of the initial conditions and parameters was done in order to achieve significant changes in the network's behavior. After these checks, a modeling of the SIQRA network was performed, where all parameters varied from 0.1 to 1.0, aiming for a more in-depth analysis of the influence of each parameter on the final state of the SIQRA network. These tests concluded that the network in question is stable for all possible variations if the model used does not include a nonlinear IQ term, and can be safely implemented in real computer networks. For the model with a nonlinear IQ term, the necessity of an initial population of at least one antidote or quarantine node was proven.
+Firstly, a manual variation of the initial conditions and parameters was done in order to achieve significant changes in the network's behavior. After these checks, a modeling of the SIQRA network was performed, where all parameters varied from 0.1 to 1.0, aiming for a more in-depth analysis of the influence of each parameter on the final state of the SIQRA network.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/79e85f04-f4ea-4ac1-baf1-13b637c61526">
@@ -34,7 +37,8 @@ Firstly, a manual variation of the initial conditions and parameters was done in
 <br>Example of a type 2 network with an initial population of 99 susceptibles and 1 infected tending towards an endemic final state.
 </p>
 
-
+# Conclusion
+These tests concluded that the network in question is stable for all possible variations if the model used does not include a nonlinear IQ term, and can be safely implemented in real computer networks. For the model with a nonlinear IQ term, the necessity of an initial population of at least one antidote or quarantine node was proven.
 
 # References
 [1] KERMAKC, W.O.; MCKENDRICK, A.G.; A contribution to the mathematical theory of epidemics. _Proceedings of the Royal Society of London. Series A, Containing papers of mathematical and physical character_, 115(772), p. 700-721, 1927.
